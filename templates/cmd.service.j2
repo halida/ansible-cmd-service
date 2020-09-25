@@ -1,0 +1,10 @@
+[Unit]
+Description={{name}}
+
+[Service]
+Type=simple
+WorkingDirectory={{path}}
+ExecStart={{cmd}}
+
+[Install]
+WantedBy=multi-user.target
