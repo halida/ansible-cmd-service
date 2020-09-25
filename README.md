@@ -4,10 +4,16 @@ Systemd user level service for one command.
 
 ## Usage
 
-Clone to your roles folder as `cmd-service`, then in your playbooks file:
+Clone to your roles folder as `cmd-service`:
+
+```sh
+git submodule add git@github.com:halida/ansible-cmd-service.git roles/cmd-service
+```
+
+Then in your playbooks file:
 
 ```yaml
-  import_role:
+- import_role:
     name: cmd-service
   vars:
       name: 'python-http-server'
