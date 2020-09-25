@@ -17,6 +17,6 @@
   systemd:
     name: "{{ name }}"
     daemon_reload: yes
-    state: started
+    state: restarted
     enabled: yes
     scope: user
