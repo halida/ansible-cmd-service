@@ -1,17 +1,7 @@
-- name: mkdir
-  file:
-    path: "~/.config/systemd/user/"
-    state: directory
-
-- name: mkdir
-  file:
-    path: "{{path}}"
-    state: directory
-
 - name: make an service
   template:
     src: "cmd.service.j2"
-    dest: "~/.config/systemd/user/{{ name }}.service"
+    dest: "/etc/systemd/system/{{ name }}.service"
 
 - name: start
   systemd:
@@ -19,4 +9,3 @@
     daemon_reload: yes
     state: restarted
     enabled: yes
-    scope: user

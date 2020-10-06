@@ -1,2 +1,2 @@
 - include: cmd.yml
-  become: false
+  become: true
