@@ -1,6 +1,7 @@
 galaxy_info:
+  role_name: cmd_service
   author: linjunhalida
-  description: cmd-service
+  description: cmd_service
   company: none
 
   # If the issue tracker for your role is not on github, uncomment the
