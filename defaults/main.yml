@@ -1,3 +1,4 @@
 name: 'test'
 path: '/tmp/'
 cmd: "yes "
+target: "multi-user.target"

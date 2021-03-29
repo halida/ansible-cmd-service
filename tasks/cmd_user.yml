@@ -8,6 +8,10 @@
     path: "{{path}}"
     state: directory
 
+- name: fix target
+  set_fact:
+    target: "default.target"
+
 - name: make an service
   template:
     src: "cmd.service.j2"
