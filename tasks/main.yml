@@ -1,2 +1,1 @@
-- include: cmd.yml
-  become: true
+- include_tasks: cmd.yml
