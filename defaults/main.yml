@@ -1,6 +1,6 @@
 name: 'test'
 path: '/tmp/'
-cmd: "yes "
+cmd: "sleep 10 "
 target: "multi-user.target"
 user: root
 group: root
